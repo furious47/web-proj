@@ -2,11 +2,21 @@
 body{box-sizing: border-box;
     margin: 0;
 }
+
+article{
+    position: relative;
+    
+}
 h1{
     color: gray;
     padding-right: 15px;
     font-size: 30px;
     
+}
+h2,h3{
+    color: gray;
+    font-weight: bolder;
+
 }
 
 ul{
@@ -133,18 +143,77 @@ img{
     border-radius: 10px;
 }
 
-.overlay a{
+.overlay button{
     background-color: rgb(57, 57, 134);
     color: rgb(229, 229, 243);
     padding: 10px;
     border-radius: 10px;
     font-size: 16px;
+    border: none;
     opacity: 0;
+    cursor: pointer;
+    transition: 0.3s;
     
 }
 
-.card:hover .overlay a{
-    opacity: 1.4;
+.card:hover .overlay button{
+    opacity: 1;
+}
+
+.overlay button:hover{
+    background-color: rgb(140, 140, 240);
+}
+
+
+.modal{
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: grid;
+    place-items: center;
+    /* transform: translate(-50%,-50%); */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    visibility: hidden;
+
+
+
+
+
+}
+
+.modal-container{
+    position: absolute;
+    background-color: aquamarine;
+    width: 80vh;
+    height: 32vh;
+
+    
+}
+
+.open-modal{
+    z-index: 1;
+    visibility: visible;
+}
+
+.icon{
+    position: absolute;
+    right: 0;
+    /* padding: 10px; */
+    /* cursor: pointer; */
+}
+.closer{
+    border: none;
+    padding: 10px;
+    background-color: aquamarine;
+    cursor: pointer;
+    
+
+}
+
+.oppa{
+    opacity: 0.3;
 }
 
 
