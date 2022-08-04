@@ -184,7 +184,7 @@ img{
 }
 
 .modal-container{
-    position: absolute;
+    position: relative;
     background-color: aquamarine;
     width: 80vh;
     height: 32vh;
